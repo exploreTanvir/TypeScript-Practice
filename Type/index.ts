@@ -34,3 +34,40 @@ unionType(202);
 var uName: string[];
 uName = ["Tanvir", "Raju", "Rohim"];
 console.log(uName[1]);
+
+// Tuple type
+
+var tupleType: [number, string];
+tupleType = [101, "Tanvir"];
+tupleType.push(102, "Raju");
+
+console.log(tupleType);
+
+//Enum type- store constant value thats why duplicate value is not allowed here.
+//enum  basically 3 type ...1/numeric 2/string 3/hetergenous
+
+//Numeric enum
+enum enumData1 {
+  ReadData = 3,
+  SaveData = 6,
+  DeleteData,
+}
+
+console.log(enumData1);
+
+//String enum
+enum enumData2 {
+  ReadData="Tanvir",
+  SaveData="Raju"
+}
+
+console.log(enumData2)
+
+//hetergenous type enum/mixed type enum
+enum enumData3 {
+  ReadData="Tanvir",
+  SaveData="Raju"
+  id=101,
+}
+
+console.log(enumData3)
