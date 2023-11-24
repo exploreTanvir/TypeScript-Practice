@@ -56,3 +56,18 @@ var enumData3;
     enumData3[enumData3["id"] = 101] = "id";
 })(enumData3 || (enumData3 = {}));
 console.log(enumData3);
+// Object type
+var usName;
+var usName;
+usName = { userName: "Tanvir", userID: 123 };
+console.log(usName);
+// example 2
+var users;
+users = [];
+var user1;
+user1 = { UserName: "Tanvir", UsersID: 123 };
+var user2;
+user2 = { UserName: "Raju", UsersID: 456 };
+users.push(user1);
+users.push(user2);
+console.log(users);

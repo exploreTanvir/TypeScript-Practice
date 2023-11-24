@@ -57,17 +57,35 @@ console.log(enumData1);
 
 //String enum
 enum enumData2 {
-  ReadData="Tanvir",
-  SaveData="Raju"
+  ReadData = "Tanvir",
+  SaveData = "Raju",
 }
 
-console.log(enumData2)
+console.log(enumData2);
 
 //hetergenous type enum/mixed type enum
 enum enumData3 {
-  ReadData="Tanvir",
-  SaveData="Raju"
-  id=101,
+  ReadData = "Tanvir",
+  SaveData = "Raju",
+  id = 101,
 }
 
-console.log(enumData3)
+console.log(enumData3);
+
+// Object type
+let usName: object;
+let usName: { userName: string; userID: number };
+usName = { userName: "Tanvir", userID: 123 };
+console.log(usName);
+
+// example 2
+
+let users: object[];
+users = [];
+let user1: { UserName: string; UsersID: number };
+user1 = { UserName: "Tanvir", UsersID: 123 };
+let user2: { UserName: string; UsersID: number };
+user2 = { UserName: "Raju", UsersID: 456 };
+users.push(user1);
+users.push(user2);
+console.log(users)
