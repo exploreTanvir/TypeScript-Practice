@@ -1,0 +1,11 @@
+* {
+  background: aqua;
+}
+
+div {
+  margin: 0.5rem 0;
+}
+input[type="email"] {
+  width: 20rem;
+  text-align: center;
+}
