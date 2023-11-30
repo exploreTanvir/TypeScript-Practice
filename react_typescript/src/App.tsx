@@ -1,6 +1,10 @@
 import "./App.css";
-import User from "./components/User";
 import ArrayOfObject from "./components/ArrayOfObject";
+import Button from "./components/Button";
+import ButtonStyle from "./components/ButtonStyle";
+import DataFetch from "./components/DataFetch";
+import Post from "./components/Post";
+import User from "./components/User";
 
 function App() {
   const user1 = {
@@ -42,10 +46,13 @@ function App() {
   return (
     <div className="App">
       <h1>React TypeScript</h1>
-
       <User user={user1} />
       <User user={user2} />
       <ArrayOfObject users={users} />
+      <DataFetch status="error" />
+      <Button>Click me</Button>
+      <Post />
+      <ButtonStyle btnStyle={{color:"white", background:"green"}} />
     </div>
   );
 }
