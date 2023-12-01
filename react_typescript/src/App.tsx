@@ -3,7 +3,10 @@ import ArrayOfObject from "./components/ArrayOfObject";
 import Button from "./components/Button";
 import ButtonStyle from "./components/ButtonStyle";
 import DataFetch from "./components/DataFetch";
+import Event from "./components/Event";
+import NewUser from "./components/NewUser";
 import Post from "./components/Post";
+import UseState from "./components/UseState";
 import User from "./components/User";
 
 function App() {
@@ -52,7 +55,12 @@ function App() {
       <DataFetch status="error" />
       <Button>Click me</Button>
       <Post />
-      <ButtonStyle btnStyle={{color:"white", background:"green"}} />
+      <ButtonStyle
+        btnStyle={{ color: "white", textAlign: "center", background: "green" }}
+      />
+      <UseState />
+      <NewUser />
+      <Event />
     </div>
   );
 }
